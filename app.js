@@ -1,10 +1,9 @@
 const express = require("express");
 
-// DATA
-
 //Routers
-
+//prueba inicial
 //Utils
+
 const { sequelize } = require("./util/database");
 
 //Init express app
@@ -24,7 +23,7 @@ app.get("/users", (req, res) => {
   });
 });
 
-//conexion de base de datos
+//database conection
 sequelize
   .authenticate()
   .then(() => console.log("Database authenticated"))
